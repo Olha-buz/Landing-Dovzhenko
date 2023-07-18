@@ -1,0 +1,701 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-light: #ED7CFF;
+    --purple-dark: #6200A7;
+    --blue-button: #5650DE;
+    --gray-text: #F5F5F5;
+    --black-text: #080808;
+    --white: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    color: var(--black-text);
+    background-color: var(--white);
+}
+
+/*Base style, mobile screen*/
+.container {
+    min-width: 428px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 74px;
+    padding-bottom: 42px;
+    
+    outline: 2px solid red;
+    outline-offset: -2px;
+    
+}
+
+/*Tablet screen*/
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/*Desctop screen*/
+@media only screen and (min-width: 1158px) {
+    .container {
+        max-width: 1440px;
+
+    }
+}
+
+img {
+    display: block;
+}
+
+section {
+    color: var(--black-text);
+}
+
+.link {
+    text-decoration: none;
+    padding: 12px 0;
+}
+
+.list {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+/*Header*/
+.header {
+    height: 90px;
+    background-color: rgba(98, 0, 167, 0.50);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.div-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+}
+
+/*Navigation menu*/
+.nav-header {}
+
+.menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.menu-items-header {}
+
+.link-header {
+    position: relative;
+    color: var(--black-text);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+    transition: color 250ms ease-in-out;
+}
+
+.link-header::after {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: transparent;
+    transition: background-color 250ms ease-in-out;
+}
+
+.link-header:hover,
+.link-header:focus,
+.link-header:active {
+    color: var(--gray-text);
+}
+
+.link-header:hover::after,
+.link-header:focus::after,
+.link-header:active::after, {
+    background-color: var(--gray-text);
+}
+
+/*Button for mobile navigation menu*/
+.menu-toggle {
+    min-height: 20px;
+    min-width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.menu-toggle-icon {
+    fill: var(--black-text); 
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.menu-toggle:hover .menu-toggle-icon,
+.menu-toggle:focus .menu-toggle-icon,
+.menu-toggle:active .menu-toggle-icon {
+    fill: var(--gray-text);
+}
+
+/*Networks links menu*/
+.networks-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.network-item {}
+
+.network-link {}
+
+.icon-network {
+   fill: var(--black-text);
+   max-width: 32px;
+}
+
+/*Main page*/
+
+/*Section #1 Hero section*/
+.hero-section {}
+
+.div-hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.rightside-hero {
+    margin-right: 160px;
+}
+
+/*title text*/
+.div-title {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 56px;
+    
+}
+
+.title-hero {
+    font-family: Arsenal;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    width: 441px;
+}
+
+.text-hero {
+    position: absolute;
+    top: 25px;
+    right: -71px;
+
+    width: 218px;
+    color: var(--blue-button);
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+/*photo with logo*/
+.div-img-logo {
+    position: relative;
+    width: fit-content;
+}
+
+.img-hero {
+
+}
+
+.logo-link-hero {
+    position: absolute;
+    top: 36px;
+    left: 36px;
+    z-index: 5;
+
+}
+
+.svg-logo-brand {
+    fill: var(--purple-dark);
+}
+
+/*Small links*/
+.small-list-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 44px;
+}
+
+.item-link-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 28px;
+    height: 64px;
+    max-width: 160px;
+    border-radius: 8px;
+    background-color: rgba(98, 0, 167, 0.16);
+    
+}
+
+.small-link-hero {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-align: center;
+}
+
+/*main link look like button*/
+.main-link-hero {
+    height: 46px;
+    width: 282px;
+    border-radius: 16px;
+    background-color: var(--blue-button);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--gray-text);
+    padding: 12px 36px;
+}
+
+/*Section #2 About me*/
+.about-section {}
+
+.div-about {}
+
+.title-about {
+    color: #080808;
+    font-family: Arsenal;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.block-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+/*list about me*/
+
+.list-about {
+    width: 560px;
+}
+
+.item-about:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.item-about {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.marker-list-about {
+    min-width: 8px;
+    min-height: 8px;
+    background-color: #ED7CFF;
+    border-radius: 1px;
+}
+
+.text-about {
+    text-align: justify;
+}
+
+/*Photo in section about me*/
+.img-about {}
+
+/*Section #3 Teacer, for parents*/
+.teacher-section {}
+
+.div-teacher {}
+
+.title-teacher {
+    color: var(--black-text);
+    text-align: center;
+    font-family: Arsenal;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 56px;
+}
+
+/*Div What we will doing*/
+.div-doing {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    background-color: rgba(237, 124, 255, 0.36);
+    border-radius: 24px;
+}
+
+.title-doing {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+
+    margin-bottom: 24px;
+}
+
+.block-teacher {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-doing {
+}
+
+.marker-list-doing {
+    min-width: 6px;
+    min-height: 6px;
+    background-color: var(--purple-dark);
+    border-radius: 1px;
+}
+
+.item-dong {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.text-doing {}
+
+/*else part section 3*/
+.rightside-teacher {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: inherit;
+}
+
+.notice-teacher {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    max-width: 420px;
+}
+
+.text-teacher {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 420px;
+}
+
+.button-teacher {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--gray-text);
+    background-color: var(--blue-button);
+    padding: 18px 60px;
+    border-radius: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Section #4 Expert, for teachers*/
+.expert-section {}
+
+.div-expert {}
+
+.title-expert {
+    font-family: Arsenal;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.block-expert {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Div what can i offer*/
+.block-offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 588px;
+    min-height: inherit;
+}
+
+.div-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+
+.title-offer {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+}
+
+.text-offer {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.list-offer {
+}
+
+.item-offer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.item-offer:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.marker-offer {
+    min-width: 12px;
+    min-height: 12px;
+    background-color: #ED7CFF;
+    border-radius: 1px;
+}
+
+/*Section #5 Reviewes*/
+.reviewes-section {}
+
+.div-reviewes {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+}
+
+/*Div for parents reviewes*/
+.parents-reviewes {}
+
+.text-reviewes {
+    text-align: center;
+    font-family: Arsenal;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 48px;
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-reviewes {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 48px
+}
+
+.item-reviewes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.img-review {
+    border-radius: 50%;
+    border: 1 px solid var(--purple-dark);
+}
+
+.block-review {}
+
+.name-review {
+    margin-bottom: 8px;
+    font-family: Arsenal;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text-review {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/*Div for teachers reviewes*/
+.teachers-reviewes {
+    display: none;
+}
+
+/*Button to change reviewes divs*/
+.button-reviewes {
+    min-height: 60px;
+    padding: 12px 24px;
+    border-radius: 16px;
+    background-color: rgba(86, 80, 222, 0.25);
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Section #6 Contact me*/
+.contact-section {}
+
+.div-contact {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: var(--purple-light);
+    border-radius: 16px;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title-contact {
+    font-family: Arsenal;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px
+
+}
+
+.button-contact {
+    display: inline-flex;
+    padding: 12px 56px 12px 56px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--gray-text);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/*Footer*/
+.footer {}
+
+.div-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/*Name and link-logo footer*/
+.div-name-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.name-footer {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+/*Menu footer*/
+.list-footer {
+
+}
+
+.item-footer {
+}
+
+.item-footer:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+/*Text in footer*/
+.text-footer {}
+
+
+/*Mobile menu header*/
+.div-molile-menu {}
+
+/*Modal window for parents section #3*/
+.div-modal-parents {}
+
+/*Modal window for teachers section #4*/
+.div-modal-teachers {}

@@ -11,9 +11,7 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Manrope:wght@300&display=swap" rel="stylesheet">
 
 
 </head>
@@ -24,43 +22,43 @@
         <div class="div-header container">
             <!--Navigation menu-->
           <nav class="nav-header">
-             <ul class="menu-header">
+             <ul class="menu-header list">
                  <li class="menu-items-header">
-                    <a class="link-header" href="#">Головна</a>
+                    <a class="link-header link" href="#Hero-section">Головна</a>
                  </li>
                  <li class="menu-items-header">
-                    <a class="link-header" href="#">Про мене</a>
+                    <a class="link-header link" href="#About-me-section">Про мене</a>
                  </li>
                  <li class="menu-items-header">
-                    <a class="link-header" href="">Батькам</a>
+                    <a class="link-header link" href="#For-parents-section">Батькам</a>
                  </li>
                 <li class="menu-items-header">
-                    <a class="link-header" href="">Вчителям</a>
+                    <a class="link-header link" href="#For-teachers-section">Вчителям</a>
                 </li>
                 <li class="menu-items-header">
-                    <a class="link-header" href="">Відгуки</a>
+                    <a class="link-header link" href="#Reviews-section">Відгуки</a>
                 </li>
              </ul>
          </nav>
           <!--Button for mobile navigation menu-->
          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg class="menu-toggle-icon" width="32" height="22">
-                <use href="./images/icons.svg#hamburger"></use>
+            <svg class="menu-toggle-icon" width="24" height="20">
+                <use href="./svg/sprite.svg#icon-burger"></use>
             </svg>
          </button>
           <!--Networks links menu-->
-         <ul class="networks-header">
+         <ul class="networks-list list">
             <li class="network-item">
-                <a class="network-link" href="">
-                    <svg >
-                        <use > </use>
+                <a class="network-link link" href="https://instagram.com/ped_mama?igshid=Y2IzZGU1MTFhOQ==" target="_blank">
+                    <svg class="icon-network" width="28" height="28">
+                        <use href="/svg/sprite.svg#icon-logo-facebook"></use>
                     </svg>
                 </a>
             </li>
             <li class="network-item">
-                <a class="network-link" href="">
-                    <svg>
-                        <use> </use>
+                <a class="network-link link" href="https://www.facebook.com/profile.php?id=100006926508554" target="_blank">
+                    <svg class="icon-network" width="28" height="28">
+                        <use href="./svg/sprite.svg#icon-logo-instagram"></use>
                     </svg>
                 </a>
             </li>
@@ -71,56 +69,66 @@
       <!--Main page-->
       <main>
         <!--Section #1 Hero section-->
-        <section class="hero-section">
+        <section class="hero-section" id="Hero-section">
             <div class="div-hero container">
-              <!--title text-->
-                <h1 class="title-hero">Ольга Довженко</h1>
-                <h3 class="text-hero">Вчитель початкових класів/репетитор</h3>
+                <div class="rightside-hero">
+                   <!--title text-->
+                   <div class="div-title">
+                  <h1 class="title-hero">Ольга Довженко</h1>
+                  <h3 class="text-hero">Вчитель початкових класів/репетитор</h3>  
+                   </div>
+                   <!--small links-->
+                   <ul class="small-list-hero list">
+                    <li class="item-link-hero">
+                        <a class="small-link-hero link" href="">Підготовка до школи</a>
+                    </li>
+                    <li class="item-link-hero">
+                        <a class="small-link-hero link" href="">Додаткові заняття</a>
+                    </li>
+                    <li class="item-link-hero">
+                        <a class="small-link-hero link" href="">Консультації для колег</a>
+                    </li>
+                   </ul>
+                   <!--main link look like button-->
+                   <a class="main-link-hero link" href="">Зв'язатися зі мною</a>
+                </div>
               <!--photo with logo-->
-                <img href="" width="" alt="Olha's photo"/>
-                <a href="">
-                    <svg>
-                        <use></use>
-                    </svg>
-                </a>
-              <!--small buttons-->
-                <ul class="small-buttons-hero">
-                    <li class="item-button-hero">
-                        <button>Підготовка до школи</button>
-                    </li>
-                    <li class="item-button-hero">
-                        <button>Додаткові заняття</button>
-                    </li>
-                    <li class="item-button-hero">
-                        <button>Консультації для колег</button>
-                    </li>
-                </ul>
-              <!--main button-->
-                <button>Зв'язатися зі мною</button>
+                <div class="div-img-logo">
+                   <img class="img-hero" src="./images/hero-foto@1x.png" width="463px" alt="Olha's photo"/>
+                   <a class="logo-link-hero link" href="">
+                       <svg class="svg-logo-brand" width="90" height="14">
+                           <use href="./svg/sprite.svg#icon-logo-brand"></use>
+                       </svg>
+                   </a>
+                </div>
+              
             </div>
         </section>
 
         <!--Section #2 About me-->
-        <section class="about-section">
+        <section class="about-section" id="About-me-section">
             <div class="div-about container">
                 <h2 class="title-about">Чому на заняття по дошкільній підготовці треба йти саме до мене</h2>
-                <!--List about me-->
-                <div class="div-text-about">
-                    <ul class="list-about">
+                <div class="block-about">
+                   <!--List about me-->
+                    <ul class="list-about list">
                         <!--Item 1-->
                         <li class="item-about">
+                            <div class="marker-list-about"></div>
                             <p class="text-about">
                                 за освітою я вчитель початкових класів, вчитель англійської мови в початковій школі, вихователь закладів дошкільної освіти
                             </p>
                         </li>
                         <!--Item 2-->
                         <li class="item-about">
+                            <div class="marker-list-about"></div>
                             <p class="text-about">
                                 є досвід роботи в закладі дошкільної освіти
                             </p>
                         </li>
                         <!--Item 3-->
                         <li class="item-about">
+                            <div class="marker-list-about"></div>
                             <p class="text-about">
                                 працюю вчителем початкових класів у одній з найпрестижніших шкіл м.Миколаїв за науково-педагогічним проєктом “Інтелект
                                 України”
@@ -128,210 +136,272 @@
                         </li>
                         <!--Item 4-->
                         <li class="item-about">
+                            <div class="marker-list-about"></div>
+                            <p class="text-about">
+                                регіональний тренер Нової української школи
+                            </p>
+                        </li>
+                        <!--Item 5-->
+                        <li class="item-about">
+                            <div class="marker-list-about"></div>
                             <p class="text-about">
                                 є переможцем обласного конкурсу "Учитель року-2017" у номінації "Початкова освіта" та стала однією із 12-ти кращих
                                 учителів України початкових класів у 2017 році.
                             </p>
                         </li>
-                        <!--Item 5-->
+                        <!--Item 6-->
                         <li class="item-about">
+                            <div class="marker-list-about"></div>
                             <p class="text-about">
                                 працювала методистом кафедри теорії й методики дошкільної та початкової освіти Миколаївського обласного інституту
                                 післядипломної педагогічної освіти.
                             </p>
                         </li>
-                        <!--Item 6-->
+                        <!--Item 7-->
                         <li class="item-about">
+                            <div class="marker-list-about"></div>
                             <p class="text-about">
                                 експерт оцінювання професійних компетентностей вчителів початкових класів під час сертифікації (4 роки)
                             </p>
                         </li>
-                        <!--Item 7-->
+                        <!--Item 8-->
                         <li class="item-about">
+                            <div class="marker-list-about"></div>
                             <p class="text-about">
                                 успішно пройшла сертифікацію педагогічних працівників відповідно до професійного стандарту “Вчитель початкових класів
                                 закладу дошкільної середньої освіти”
                             </p>
                         </li>
-                        <!--Item 8-->
+                        <!--Item 9-->
                         <li class="item-about">
+                            <div class="marker-list-about"></div>
                             <p class="text-about">
                                 експерт інституційного аудиту в закладах загальної середньої освіти
                             </p>
                         </li>
-                        <!--Item 9-->
-                        <li class="item-about">
-                            <p class="text-about"></p>
-                        </li>
                         <!--Item 10-->
                         <li class="item-about">
-                            <p class="text-about"></p>
+                            <div class="marker-list-about"></div>
+                            <p class="text-about">
+                                учасниця проєкту “Найбільший урок у світі” на підтримку Цілей Сталого Розвитку
+                            </p>
                         </li>
                         <!--Item 11-->
                         <li class="item-about">
-                            <p class="text-about"></p>
+                            <div class="marker-list-about"></div>
+                            <p class="text-about">
+                                і найголовніше - я люблю співпрацювати з дітьми і фанат своєї справи
+                            </p>
                         </li>
                     </ul> 
+                   <!--Photo in section about me-->
+                   <img class="img-about" src="./images/about-foto@1x.jpg" width="560px" height="560px" alt=""/>
                 </div>
-                <!--Photo in section about me-->
-                <img href="" width="" alt=""/>
             </div>
         </section>
 
         <!--Section #3 Teacer, for parents-->
-        <section class="teacher-section">
+        <section class="teacher-section" id="For-parents-section">
             <div class="div-teacher container">
                 <h2 class="title-teacher">Вчитель. Підготовка до школи. Додаткові заняття.</h2>
-                <!--Div What we will doing-->
-                <div class="div-doing">
+                <div class="block-teacher">
+                    <!--else part section 3-->
+                    <div class="rightside-teacher">
+                    <h3 class="notice-teacher">Набір дітей у групу по підготовці до школи!</h3>
+                    <p class="text-teacher">Дитині на 1 вересня виповнилось 5 років і/або через рік дитина йтиме в 1 клас.</p>
+                    <button class="button-teacher">Актуальні ціни</button>
+                    </div>
+                    <!--Div What we will doing-->
+                    <div class="div-doing">
                     <h3 class="title-doing">Що  ми будемо робити на заняттях:</h3>
-                    <ul class="list-doing">
+                    <ul class="list-doing list">
                         <!--item doing 1-->
                         <li class="item-dong">
+                            <div class="marker-list-doing"></div>
                             <p class="text-doing">
-
+                                вивчемо друковані та письмові букви
                             </p>
                         </li>
                         <!--item doing 2-->
                         <li class="item-dong">
+                            <div class="marker-list-doing"></div>
                             <p class="text-doing">
-                        
+                                навчимося читати та списувати з друкованого тексту                        
                             </p>
                         </li>
                         <!--item doing 3-->
                         <li class="item-dong">
+                            <div class="marker-list-doing"></div>
                             <p class="text-doing">
-                        
+                                робити звуковий аналіз слів                        
                             </p>
                         </li>
                         <!--item doing 4-->
                         <li class="item-dong">
+                            <div class="marker-list-doing"></div>
                             <p class="text-doing">
-                        
+                                вивчемо числа 1-100                        
                             </p>
                         </li>
                         <!--item doing 5-->
                         <li class="item-dong">
+                            <div class="marker-list-doing"></div>
                             <p class="text-doing">
-                        
+                                знатимемо склад чисел в межах десяти                        
                             </p>
                         </li>
                         <!--item doing 6-->
                         <li class="item-dong">
+                            <div class="marker-list-doing"></div>
                             <p class="text-doing">
-                        
+                                ознайомимось з задачею                        
                             </p>
                         </li>
                         <!--item doing 7-->
                         <li class="item-dong">
+                            <div class="marker-list-doing"></div>
                             <p class="text-doing">
-                        
+                                багато спілкуватимемось, вчитимемось формулювати свою думку, відстоювати її                        
                             </p>
                         </li>
                     </ul>
+                    </div>
                 </div>
-                <h3 class="notice-teacher">Набір дітей у групу по підготовці до школи!</h3>
-                <p class="text-teacher">Дитині на 1 вересня виповнилось 5 років і/або через рік дитина йтиме в 1 клас.</p>
-                <button>Актуальні ціни</button>
             </div>
         </section>
 
         <!--Section #4 Expert, for teachers-->
-        <section class="expert-section">
+        <section class="expert-section" id="For-teachers-section">
             <div class="div-expert container">
-                <h2 class="title-expert">Консультації для колег</h2>
-                <img href="" width="" alt=""/>
-                <!--Div what can i offer-->
-                <div class="div-offer">
-                    <h3 class="title-offer">Що я пропоную?</h3>
-                    <span class="text-offer"></span>
-                    <span class="text-offer"></span>
-                    <ul class="list-offer">
-                        <li class="item-offer">
-                            <div class="marker-offer"></div>
-                            <span class="text-offer"></span>
-                        </li>
-                        <li class="item-offer">
-                            <div class="marker-offer"></div>
-                            <span class="text-offer"></span>
-                        </li>
-                        <li class="item-offer">
-                            <div class="marker-offer"></div>
-                            <span class="text-offer"></span>
-                        </li>
-                    </ul>
+                <h2 class="title-expert">Консультації для колег.</h2>
+                <div class="block-expert">
+                    <img src="./images/expert-foto@1x.jpg" width="588px" alt=""/>
+                    <!--Div what can i offer-->
+                    <div class="block-offer">
+                        <div class="div-offer">
+                             <h3 class="title-offer">Що я пропоную?</h3>
+                             <p class="text-offer">Підготовка вчителів до проходження процедури сертифікації</p>
+                             <p class="text-offer">Консультація за запитом:</p>
+                             <ul class="list-offer list">
+                                 <li class="item-offer">
+                                     <div class="marker-offer"></div>
+                                     <p class="text-offer">як розуміти професійний стандарт “Вчитель початкових класів закладу загальної середньої освіти”</p>
+                                 </li>
+                                 <li class="item-offer">
+                                     <div class="marker-offer"></div>
+                                     <p class="text-offer">використання методів формувального оцінювання на уроках у початкових класах</p>
+                                 </li>
+                                 <li class="item-offer">
+                                     <div class="marker-offer"></div>
+                                     <p class="text-offer">“Почніть з 0” - як зважитись на те, щоб розпочати дошкільну підготовку онлайн в групах</p>
+                                  </li>
+                             </ul>
+                        </div>
+                        <button class="button-teacher">Семінари</button>
+                    </div>
                 </div>
 
             </div>
         </section>
 
         <!--Section #5 Reviewes-->
-        <section class="reviewes-section">
+        <section class="reviewes-section" id="Reviews-section">
             <div class="div-reviewes container">
               <!--Div for parents reviewes-->
                 <div class="parents-reviewes">
-                    <span class="text-reviewes"></span>
-                    <ul class="list-reviewes">
+                    <h3 class="text-reviewes">Я дорожу кожним своїм клієнтом. Я шукаю індивідуальний підхід до кожної дитини навіть під час групового заняття. 
+                        Відгуки батьків це підтверджують.</h3>
+                    <ul class="list-reviewes list">
                         <li class="item-reviewes">
-                            <img href="" width="" alt=""/>
-                            <span class="name-review"></span>
-                            <p class="text-review"></p>
+                            <img class="img-review" src="./images/review1.jpg" width="60px" alt="foto review"/>
+                            <div class="block-review">
+                                <h4 class="name-review">@ludmilka_kreativ</h4>
+                                <p class="text-review">Ми пишаємось тим, що з вами проходили підготовку. Ви неймовірний профі своєї справи. Це так чудово, коли людина
+                            займається тим, що подобається.</p>
+                            </div>
                         </li>
                         <li class="item-reviewes">
-                            <img href="" width="" alt="" />
-                            <span class="name-review"></span>
-                            <p class="text-review"></p>
+                            <img class="img-review" src="./images/review2.jpg" width="60px" alt="foto review" />
+                            <div class="block-review">
+                                <h4 class="name-review">@ninabatsa8</h4>
+                                <p class="text-review">Дякую, за хоч і коротку та в той час і продуктивну роботу. Незважаючи на те, що в нас було мало часу, ми підтягнули
+                            багато хвостів. Як тільки звільниться наш щільний графік, ми обов’язково продовжимо. Дякую тобі, ти найкраща.</p>
+                            </div>
                         </li>
                         <li class="item-reviewes">
-                            <img href="" width="" alt="" />
-                            <span class="name-review"></span>
-                            <p class="text-review"></p>
+                            <img class="img-review" src="./images/review3.jpg" width="60px" alt="foto review" />
+                            <div class="block-review">
+                                <h4 class="name-review">@mariiadilanian</h4>
+                                <p class="text-review">Прийшовши на заняття Тьома не міг не читати не писати (прописними). Спочатку мені здалось, що він не встигає за дітками,
+                            бо група була вже набрана і якийсь час працювала. Але вийшло навпаки, за дітьми він навчився все швидше ніж я думала.
+                            Дякую, працюємо далі... Мало того, що цікааво дитині, так ще й мама бере приклад як дитині пояснювати ту чи іншу тему.
+                            Що мені подобається у Вас як особистості, так це вміння поєднувати доброту, увагу, турботу, спокій з дисципліною на
+                            уроці.</p>
+                            </div>
                         </li>
                         <li class="item-reviewes">
-                            <img href="" width="" alt="" />
-                            <span class="name-review"></span>
-                            <p class="text-review"></p>
+                            <img class="img-review" src="./images/review4.jpg" width="60px" alt="foto review" />
+                            <div class="block-review">
+                                <h4 class="name-review">@kuzmeniukelena</h4>
+                                <p class="text-review">Привіт. Нам все сподобалось. Незвично, але дуже цікаво. Ідемо на городину оглядати дари природи. Запитує чому завтра не
+                            буде заняття та коли вже будемо писати.
+                            Дуже раді, що з вами тепер працюватимемо.</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
               <!--Div for teachers reviewes-->  
                 <div class="teachers-reviewes">
-                    <span class="text-reviewes"></span>
+                    <h3 class="text-reviewes">Я зрозуміла, що йду в правильному напрямку, запрошуючи колег на свої уроки. Про це свідчать позитивні відгуки від тих,
+                    хто був присутній.</h3>
                     <ul class="list-reviewes">
                         <li class="item-reviewes">
-                            <img href="" width="" alt="" />
-                            <span class="name-review"></span>
-                            <p class="text-review"></p>
+                            <img class="img-review" src="" width="60px" alt="foto review" />
+                            <div class="block-review">
+                                <h4 class="name-review"></h4>
+                                <p class="text-review">Пані Ольго, спасибі Вам за досвід і натхнення! Щиро дякую, що щедро поділилися своїм педагогічним інструментарієм. Хочу
+                                ще!
+                                P.S. Вашим учням пощастило. Вчителька у них майстерна і дуже педагогічно приваблива!</p>
+                            </div>
                         </li>
                         <li class="item-reviewes">
-                            <img href="" width="" alt="" />
-                            <span class="name-review"></span>
-                            <p class="text-review"></p>
+                            <img class="img-review" src="" width="60px" alt="foto review" />
+                            <div class="block-review">
+                                <h4 class="name-review"></h4>
+                                <p class="text-review">Дякую, пані Ольго! Від зустрічі отримала багато корисної інформаціїї, розяснюєте чітко та зрозуміло. Такі невеличкі
+                                родзинки, які кожен з нас використає на практиці. Щиро вдячна колегаам, за цікаві електронні ресурси. Дякую за ваше
+                                працю та допомогу!</p>
+                            </div>
                         </li>
                         <li class="item-reviewes">
-                            <img href="" width="" alt="" />
-                            <span class="name-review"></span>
-                            <p class="text-review"></p>
+                            <img class="img-review" src="" width="60px" alt="foto review" />
+                            <div class="block-review">
+                                <h4 class="name-review"></h4>
+                                <p class="text-review">Пані Олю, зустріччю задоволена. Наповнилась силою. Збагатилась знаннями про сертифікацію. Йду перевіряти свої
+                                можливості. Дякую Вам за відвертість. Це те, що я шукала.</p>
+                            </div>
                         </li>
                         <li class="item-reviewes">
-                            <img href="" width="" alt="" />
-                            <span class="name-review"></span>
-                            <p class="text-review"></p>
+                            <img class="img-review" src="" width="60px" alt="foto review" />
+                            <div class="block-review">
+                                <h4 class="name-review"></h4>
+                                <p class="text-review">Доброго дня. Пані Ольга переглянувши відеозапис хочу вам сказати велике дякую. За чітке, змістовне і зрозуміле
+                                роз’яснення в питання сертифікації. Не скажу, що я менше стала боятися, але зрозуміла в якому напрямку працюватьи. Дякую
+                                за підтримку і позитивне налаштування.</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
               <!--Button to change reviewes divs--> 
-                <button>Відгуки батьків/Відгуки вчителів</button> 
+                <button class="button-reviewes">Відгуки батьків/Відгуки вчителів</button> 
             </div>
         </section>
 
         <!--Section #6 Contact me-->
         <section class="contact-section">
             <div class="div-contact container">
-                <div class="div-purple-contact">
                     <h2 class="title-contact">Вчімося разом!</h2>
-                    <button>Зв'язатися зі мною</button>
-                </div>
+                    <button class="button-contact">Зв'язатися зі мною</button>
             </div>
         </section>
 
@@ -343,33 +413,39 @@
             <!--Name and link-logo footer-->
             <div class="div-name-logo">
                 <span class="name-footer">Ольга Довженко</span>
-                <a href="">
-                    <svg >
-                        <use></use>
+                <a class="logo-link-footer link" href="">
+                    <svg class="svg-logo-brand" width="132" height="20">
+                        <use href="/svg/sprite.svg#icon-logo-brand"></use>
                     </svg>
                 </a>
             </div>
             <!--Menu footer-->
-            <ul class="list-footer">
-                <li class="item-footer">Про мене</li>
-                <li class="item-footer">Батькам</li>
-                <li class="item-footer">Вчителям</li>
+            <ul class="list-footer list">
+                <li class="item-footer">
+                    <a class="link-nav-footer link" href="#About-me-section">Про мене</a>
+                </li>
+                <li class="item-footer">
+                    <a class="link-nav-footer link" href="#For-parents-section">Батькам</a>
+                </li>
+                <li class="item-footer">
+                    <a class="link-nav-footer link" href="#For-teachers-section">Вчителям</a>
+                </li>
             </ul>
             <!--Text in footer-->
             <span class="text-footer">Працюю офіційно ФОП Довженко О.С.</span>
             <!--Networks links footer-->
-            <ul class="networks-header">
+            <ul class="networks-list list">
                 <li class="network-item">
-                    <a class="network-link" href="">
-                        <svg>
-                            <use> </use>
+                    <a class="network-link link" href="https://instagram.com/ped_mama?igshid=Y2IzZGU1MTFhOQ==" target="_blank">
+                        <svg class="icon-network" width="28" height="28">
+                            <use href="/svg/sprite.svg#icon-logo-facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="network-item">
-                    <a class="network-link" href="">
-                        <svg>
-                            <use> </use>
+                    <a class="network-link link" href="https://www.facebook.com/profile.php?id=100006926508554" target="_blank">
+                        <svg class="icon-network" width="28" height="28">
+                            <use href="./svg/sprite.svg#icon-logo-instagram"></use>
                         </svg>
                     </a>
                 </li>
@@ -377,6 +453,21 @@
             
         </div>
       </footer>
+
+      <!--Mobile menu header-->
+      <div class="div-molile-menu container">
+
+      </div>
+
+      <!--Modal window for parents section #3-->
+      <div class="div-modal-parents">
+
+      </div>
+
+      <!--Modal window for teachers section #4-->
+      <div class="div-modal-teachers">
+
+      </div>
 
 
 </body>
