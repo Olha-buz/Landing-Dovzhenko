@@ -212,9 +212,14 @@
                     <button class="button-teacher">Актуальні ціни</button>
                     </div>
                     <!--Div What we will doing-->
-                    <div class="div-doing">
-                    <h3 class="title-doing">Що  ми будемо робити на заняттях:</h3>
-                    <ul class="list-doing list">
+                    <div class="div-doing slideshow-container">
+                        <div class="scroll-bar">
+                            <span class="dot dot-l" onclick="currentSlide(1)"></span>
+                            <span class="dot dot-r" onclick="currentSlide(2)"></span>
+                        </div>
+                          <div class="mySlides fade">
+                             <h3 class="title-doing">Що  ми будемо робити на заняттях:</h3>
+                             <ul class="list-doing list">
                         <!--item doing 1-->
                         <li class="item-dong">
                             <div class="marker-list-doing"></div>
@@ -264,8 +269,60 @@
                                 багато спілкуватимемось, вчитимемось формулювати свою думку, відстоювати її                        
                             </p>
                         </li>
-                    </ul>
+                             </ul>
+                          </div>
+                          <div class="mySlides fade">
+                             <h3 class="title-doing">Що треба підготувати для занять:</h3>
+                             <ul class="list-doing list">
+                                <!--item doing 1-->
+                                <li class="item-dong">
+                                    <div class="marker-list-doing"></div>
+                                    <p class="text-doing">
+                                        пристрій (ноутбук, планшет)
+                                    </p>
+                                </li>
+                                <!--item doing 2-->
+                                <li class="item-dong">
+                                    <div class="marker-list-doing"></div>
+                                    <p class="text-doing">
+                                        зошити у клітинку та косу лінію
+                                    </p>
+                                </li>
+                                <!--item doing 3-->
+                                <li class="item-dong">
+                                    <div class="marker-list-doing"></div>
+                                    <p class="text-doing">
+                                        простий та кольорові олівці
+                                    </p>
+                                </li>
+                                <!--item doing 4-->
+                                <li class="item-dong">
+                                    <div class="marker-list-doing"></div>
+                                    <p class="text-doing">
+                                        гумка
+                                    </p>
+                                </li>
+                                <!--item doing 5-->
+                                <li class="item-dong">
+                                    <div class="marker-list-doing"></div>
+                                    <p class="text-doing">
+                                        лінійка
+                                    </p>
+                                </li>
+                                <!--item doing 6-->
+                                <li class="item-dong">
+                                    <div class="marker-list-doing"></div>
+                                    <p class="text-doing">
+                                        матеріали, які треба буде роздрукувати
+                                    </p>
+                                </li>
+                            </ul>
+                          </div>
+                         <!-- Next and previous buttons -->
+                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
+                    
                 </div>
             </div>
         </section>
@@ -308,7 +365,7 @@
         <section class="reviewes-section" id="Reviews-section">
             <div class="div-reviewes container">  
               <!--Div for parents reviewes-->
-                <div class="parents-reviewes">
+                <div class="reviewes active" id="parentsRev">
                     <h3 class="text-reviewes">Я дорожу кожним своїм клієнтом. Я шукаю індивідуальний підхід до кожної дитини навіть під час групового заняття. 
                         Відгуки батьків це підтверджують.</h3>
                     <ul class="list-reviewes list">
@@ -351,7 +408,7 @@
                     </ul>
                 </div>
               <!--Div for teachers reviewes-->  
-                <div class="teachers-reviewes">
+                <div class="reviewes" id="teachersRev">
                     <h3 class="text-reviewes">Я зрозуміла, що йду в правильному напрямку, запрошуючи колег на свої уроки. Про це свідчать позитивні відгуки від тих,
                     хто був присутній.</h3>
                     <ul class="list-reviewes">
@@ -393,13 +450,15 @@
                     </ul>
                 </div>
               <!--Button to change reviewes divs-->
-              <div class="tabs-review">
-                  <input class="radio radio-1" type="radio" id="radio-1" name="tabs-review" checked />
-                  <label class="label-tab" for="radio-1">Відгуки батьків</label>
-                  <input class="radio radio-2" type="radio" id="radio-2" name="tabs-review" />
-                  <label class="label-tab" for="radio-2">Відгуки вчителів</label>
-                  <span class="glider"></span>
-              </div>
+              <form class="form-radio" name="formRadio">
+                  <div class="tabs-review">
+                     <input class="radio radio-1 active" type="radio" id="radio-1" name="tabsReview1" checked />
+                     <label class="label-tab" for="radio-1">Відгуки батьків</label>
+                     <input class="radio radio-2 active" type="radio" id="radio-2" name="tabsReview2"/>
+                     <label class="label-tab" for="radio-2">Відгуки вчителів</label>
+                     <span class="glider"></span>
+                 </div>
+              </form>
             </div>
         </section>
 
@@ -475,6 +534,7 @@
 
       </div>
 
-
+    <script src="./doing.js"></script>
+    <script src="./reviews.js"></script>
 </body>
 

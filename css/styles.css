@@ -36,6 +36,10 @@ body {
     font-size: 16px;
     color: var(--black-text);
     background-color: var(--white);
+    background-image: url(/images/bg.png);
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 }
 
 /*Base style, mobile screen*/
@@ -394,13 +398,120 @@ button {
 
 /*Div What we will doing*/
 .div-doing {
-    max-width: 520px;
-    display: flex;
+    width: 580px;
+    height: 400px;
+    position: relative;
+
+}
+
+.mySlides {
+    display: none;
+    width: inherit;
+    height: inherit;
+   /* display: flex;*/
     flex-direction: column;
     justify-content: center;
     padding: 24px;
     background-color: rgba(237, 124, 255, 0.36);
     border-radius: 24px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: auto;
+    height: inherit;
+    padding: 16px;
+    color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: transparent;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 6px;
+    width: 266px;
+    background-color: transparent;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 250ms ease-in-out;
+}
+
+.dot-l {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.dot-r {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.active,
+.dot:hover {
+    background-color: var(--purple-dark);
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.scroll-bar {
+    width: 532px;
+    height: 6px;
+    margin-left: 24px;
+    margin-right: 24px;
+    background-color: rgba(98, 0, 167, 0.25);
+    border-radius: 4px;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    display: flex;
+
 }
 
 .title-doing {
@@ -418,6 +529,7 @@ button {
 }
 
 .list-doing {
+    padding-left: 36px;
 }
 
 .marker-list-doing {
@@ -435,6 +547,8 @@ button {
 }
 
 .text-doing {}
+
+
 
 /*else part section 3*/
 .rightside-teacher {
@@ -560,7 +674,7 @@ button {
 
 /*Div for parents reviewes*/
 .parents-reviewes {
-    display: none;
+    display: block;
 }
 
 .text-reviewes {
@@ -595,8 +709,6 @@ button {
     border: 1 px solid var(--purple-dark);
 }
 
-.block-review {}
-
 .name-review {
     margin-bottom: 8px;
     font-family: Arsenal;
@@ -614,8 +726,12 @@ button {
 }
 
 /*Div for teachers reviewes*/
-.teachers-reviewes {
+.reviewes {
     display: none;
+}
+
+.reviewes .active {
+    display: block;
 }
 
 /*Button to change reviewes divs*/
@@ -665,7 +781,7 @@ button {
             transform: translateX(100%);
 }
 
-#radio-1:checked ~ .parents-reviewes {
+.radio-1:checked ~ .parents-reviewes {
             display: block;
 }
 
