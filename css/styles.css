@@ -559,7 +559,9 @@ button {
 }
 
 /*Div for parents reviewes*/
-.parents-reviewes {}
+.parents-reviewes {
+    display: none;
+}
 
 .text-reviewes {
     text-align: center;
@@ -617,14 +619,68 @@ button {
 }
 
 /*Button to change reviewes divs*/
-.button-reviewes {
-    min-height: 60px;
+.tabs-review {
+    width: 480px;
+    height: 60px;
     padding: 12px 24px;
     border-radius: 16px;
     background-color: rgba(86, 80, 222, 0.25);
     border: none;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+}
+
+.radio {
+    display: none;
+}
+
+.label-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black-text);
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    cursor: pointer;
+    z-index: 3;
+    transition: color 250ms ease-in-out;
+}
+
+.radio:checked + label {
+            color: var(--gray-text);
+}
+
+.radio-1:checked ~ .glider {
+            transform: translateX(0);
+}
+
+.radio-2:checked ~ .glider {
+            transform: translateX(100%);
+}
+
+#radio-1:checked ~ .parents-reviewes {
+            display: block;
+}
+
+.glider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: var(--blue-button);
+    z-index: 1;
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    height: 60px;
+    width: 240px;
+    transition: 250ms ease-in-out;
 }
 
 /*Section #6 Contact me*/
@@ -663,6 +719,8 @@ button {
     font-weight: 300;
     line-height: normal;
 }
+
+
 
 /*Footer*/
 .footer {}
