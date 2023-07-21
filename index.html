@@ -365,7 +365,7 @@
         <section class="reviewes-section" id="Reviews-section">
             <div class="div-reviewes container">  
               <!--Div for parents reviewes-->
-                <div class="reviewes active" id="parentsRev">
+                <div class="mySlides reviewes active" id="parentsRev">
                     <h3 class="text-reviewes">Я дорожу кожним своїм клієнтом. Я шукаю індивідуальний підхід до кожної дитини навіть під час групового заняття. 
                         Відгуки батьків це підтверджують.</h3>
                     <ul class="list-reviewes list">
@@ -408,7 +408,7 @@
                     </ul>
                 </div>
               <!--Div for teachers reviewes-->  
-                <div class="reviewes" id="teachersRev">
+                <div class="mySlides reviewes" id="teachersRev">
                     <h3 class="text-reviewes">Я зрозуміла, що йду в правильному напрямку, запрошуючи колег на свої уроки. Про це свідчать позитивні відгуки від тих,
                     хто був присутній.</h3>
                     <ul class="list-reviewes">
@@ -450,6 +450,11 @@
                     </ul>
                 </div>
               <!--Button to change reviewes divs-->
+            <div class="tabs-review scroll-bar">
+                <span class="scroll-rev dot dot-l" onclick="currentSlide(1)"></span>
+                <span class="scroll-rev dot dot-r" onclick="currentSlide(2)"></span>
+            </div>
+            <!--
               <form class="form-radio" name="formRadio">
                   <div class="tabs-review">
                      <input class="radio radio-1 active" type="radio" id="radio-1" name="tabsReview1" checked />
@@ -459,6 +464,7 @@
                      <span class="glider"></span>
                  </div>
               </form>
+            -->
             </div>
         </section>
 
