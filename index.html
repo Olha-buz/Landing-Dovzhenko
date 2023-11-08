@@ -363,109 +363,111 @@
 
         <!--Section #5 Reviewes-->
         <section class="reviewes-section" id="Reviews-section">
-            <div class="div-reviewes container">  
-              <!--Div for parents reviewes-->
-                <div class="mySlides reviewes active" id="parentsRev">
-                    <h3 class="text-reviewes">Я дорожу кожним своїм клієнтом. Я шукаю індивідуальний підхід до кожної дитини навіть під час групового заняття. 
+            <div class="div-reviews container">
+                <div class="tabs-review">
+                    <span class="tab tab-l" onclick="currentSlide(1)">Відгуки батьків</span>
+                    <span class="tab tab-r" onclick="currentSlide(2)">Відгуки вчителів</span>
+                </div>
+                <div class="Slides fade reviewes" id="parentsRev">
+                    <h3 class="text-reviewes">Я дорожу кожним своїм клієнтом. Я шукаю індивідуальний підхід до кожної дитини навіть під
+                        час групового заняття.
                         Відгуки батьків це підтверджують.</h3>
                     <ul class="list-reviewes list">
                         <li class="item-reviewes">
-                            <img class="img-review" src="./images/review1.jpg" width="60px" alt="foto review"/>
+                            <img class="img-review" src="./images/review1.jpg" width="60px" alt="foto review" />
                             <div class="block-review">
                                 <h4 class="name-review">@ludmilka_kreativ</h4>
-                                <p class="text-review">Ми пишаємось тим, що з вами проходили підготовку. Ви неймовірний профі своєї справи. Це так чудово, коли людина
-                            займається тим, що подобається.</p>
+                                <p class="text-review">Ми пишаємось тим, що з вами проходили підготовку. Ви неймовірний профі своєї
+                                    справи. Це так чудово, коли людина
+                                    займається тим, що подобається.</p>
                             </div>
                         </li>
                         <li class="item-reviewes">
                             <img class="img-review" src="./images/review2.jpg" width="60px" alt="foto review" />
                             <div class="block-review">
                                 <h4 class="name-review">@ninabatsa8</h4>
-                                <p class="text-review">Дякую, за хоч і коротку та в той час і продуктивну роботу. Незважаючи на те, що в нас було мало часу, ми підтягнули
-                            багато хвостів. Як тільки звільниться наш щільний графік, ми обов’язково продовжимо. Дякую тобі, ти найкраща.</p>
+                                <p class="text-review">Дякую, за хоч і коротку та в той час і продуктивну роботу. Незважаючи на те, що в
+                                    нас було мало часу, ми підтягнули
+                                    багато хвостів. Як тільки звільниться наш щільний графік, ми обов’язково продовжимо. Дякую тобі, ти
+                                    найкраща.</p>
                             </div>
                         </li>
                         <li class="item-reviewes">
                             <img class="img-review" src="./images/review3.jpg" width="60px" alt="foto review" />
                             <div class="block-review">
                                 <h4 class="name-review">@mariiadilanian</h4>
-                                <p class="text-review">Прийшовши на заняття Тьома не міг не читати не писати (прописними). Спочатку мені здалось, що він не встигає за дітками,
-                            бо група була вже набрана і якийсь час працювала. Але вийшло навпаки, за дітьми він навчився все швидше ніж я думала.
-                            Дякую, працюємо далі... Мало того, що цікааво дитині, так ще й мама бере приклад як дитині пояснювати ту чи іншу тему.
-                            Що мені подобається у Вас як особистості, так це вміння поєднувати доброту, увагу, турботу, спокій з дисципліною на
-                            уроці.</p>
+                                <p class="text-review">Прийшовши на заняття Тьома не міг не читати не писати (прописними). Спочатку мені
+                                    здалось, що він не встигає за дітками,
+                                    бо група була вже набрана і якийсь час працювала. Але вийшло навпаки, за дітьми він навчився все
+                                    швидше ніж я думала.
+                                    Дякую, працюємо далі... Мало того, що цікааво дитині, так ще й мама бере приклад як дитині
+                                    пояснювати ту чи іншу тему.
+                                    Що мені подобається у Вас як особистості, так це вміння поєднувати доброту, увагу, турботу, спокій з
+                                    дисципліною на
+                                    уроці.</p>
                             </div>
                         </li>
                         <li class="item-reviewes">
                             <img class="img-review" src="./images/review4.jpg" width="60px" alt="foto review" />
                             <div class="block-review">
                                 <h4 class="name-review">@kuzmeniukelena</h4>
-                                <p class="text-review">Привіт. Нам все сподобалось. Незвично, але дуже цікаво. Ідемо на городину оглядати дари природи. Запитує чому завтра не
-                            буде заняття та коли вже будемо писати.
-                            Дуже раді, що з вами тепер працюватимемо.</p>
+                                <p class="text-review">Привіт. Нам все сподобалось. Незвично, але дуже цікаво. Ідемо на городину
+                                    оглядати дари природи. Запитує чому завтра не
+                                    буде заняття та коли вже будемо писати.
+                                    Дуже раді, що з вами тепер працюватимемо.</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-              <!--Div for teachers reviewes-->  
-                <div class="mySlides reviewes" id="teachersRev">
-                    <h3 class="text-reviewes">Я зрозуміла, що йду в правильному напрямку, запрошуючи колег на свої уроки. Про це свідчать позитивні відгуки від тих,
-                    хто був присутній.</h3>
+                <div class="Slides fade reviewes" id="teachersRev">
+                    <h3 class="text-reviewes">Я зрозуміла, що йду в правильному напрямку, запрошуючи колег на свої уроки. Про це
+                        свідчать позитивні відгуки від тих,
+                        хто був присутній.</h3>
                     <ul class="list-reviewes">
                         <li class="item-reviewes">
-                            <img class="img-review" src="" width="60px" alt="foto review" />
+                            <img class="img-review" src="./images/review2.jpg" width="60px" alt="foto review" />
                             <div class="block-review">
                                 <h4 class="name-review"></h4>
-                                <p class="text-review">Пані Ольго, спасибі Вам за досвід і натхнення! Щиро дякую, що щедро поділилися своїм педагогічним інструментарієм. Хочу
-                                ще!
-                                P.S. Вашим учням пощастило. Вчителька у них майстерна і дуже педагогічно приваблива!</p>
+                                <p class="text-review">Пані Ольго, спасибі Вам за досвід і натхнення! Щиро дякую, що щедро поділилися
+                                    своїм педагогічним інструментарієм. Хочу
+                                    ще!
+                                    P.S. Вашим учням пощастило. Вчителька у них майстерна і дуже педагогічно приваблива!</p>
                             </div>
                         </li>
                         <li class="item-reviewes">
-                            <img class="img-review" src="" width="60px" alt="foto review" />
+                            <img class="img-review" src="./images/review2.jpg" width="60px" alt="foto review" />
                             <div class="block-review">
                                 <h4 class="name-review"></h4>
-                                <p class="text-review">Дякую, пані Ольго! Від зустрічі отримала багато корисної інформаціїї, розяснюєте чітко та зрозуміло. Такі невеличкі
-                                родзинки, які кожен з нас використає на практиці. Щиро вдячна колегаам, за цікаві електронні ресурси. Дякую за ваше
-                                працю та допомогу!</p>
+                                <p class="text-review">Дякую, пані Ольго! Від зустрічі отримала багато корисної інформаціїї, розяснюєте
+                                    чітко та зрозуміло. Такі невеличкі
+                                    родзинки, які кожен з нас використає на практиці. Щиро вдячна колегаам, за цікаві електронні
+                                    ресурси. Дякую за ваше
+                                    працю та допомогу!</p>
                             </div>
                         </li>
                         <li class="item-reviewes">
-                            <img class="img-review" src="" width="60px" alt="foto review" />
+                            <img class="img-review" src="./images/review2.jpg" width="60px" alt="foto review" />
                             <div class="block-review">
                                 <h4 class="name-review"></h4>
-                                <p class="text-review">Пані Олю, зустріччю задоволена. Наповнилась силою. Збагатилась знаннями про сертифікацію. Йду перевіряти свої
-                                можливості. Дякую Вам за відвертість. Це те, що я шукала.</p>
+                                <p class="text-review">Пані Олю, зустріччю задоволена. Наповнилась силою. Збагатилась знаннями про
+                                    сертифікацію. Йду перевіряти свої
+                                    можливості. Дякую Вам за відвертість. Це те, що я шукала.</p>
                             </div>
                         </li>
                         <li class="item-reviewes">
-                            <img class="img-review" src="" width="60px" alt="foto review" />
+                            <img class="img-review" src="./images/review2.jpg" width="60px" alt="foto review" />
                             <div class="block-review">
                                 <h4 class="name-review"></h4>
-                                <p class="text-review">Доброго дня. Пані Ольга переглянувши відеозапис хочу вам сказати велике дякую. За чітке, змістовне і зрозуміле
-                                роз’яснення в питання сертифікації. Не скажу, що я менше стала боятися, але зрозуміла в якому напрямку працюватьи. Дякую
-                                за підтримку і позитивне налаштування.</p>
+                                <p class="text-review">Доброго дня. Пані Ольга переглянувши відеозапис хочу вам сказати велике дякую. За
+                                    чітке, змістовне і зрозуміле
+                                    роз’яснення в питання сертифікації. Не скажу, що я менше стала боятися, але зрозуміла в якому
+                                    напрямку працюватьи. Дякую
+                                    за підтримку і позитивне налаштування.</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-              <!--Button to change reviewes divs-->
-            <div class="tabs-review scroll-bar">
-                <span class="scroll-rev dot dot-l" onclick="currentSlide(1)"></span>
-                <span class="scroll-rev dot dot-r" onclick="currentSlide(2)"></span>
-            </div>
-            <!--
-              <form class="form-radio" name="formRadio">
-                  <div class="tabs-review">
-                     <input class="radio radio-1 active" type="radio" id="radio-1" name="tabsReview1" checked />
-                     <label class="label-tab" for="radio-1">Відгуки батьків</label>
-                     <input class="radio radio-2 active" type="radio" id="radio-2" name="tabsReview2"/>
-                     <label class="label-tab" for="radio-2">Відгуки вчителів</label>
-                     <span class="glider"></span>
-                 </div>
-              </form>
-            -->
-            </div>
+            </div>       
         </section>
 
         <!--Section #6 Contact me-->

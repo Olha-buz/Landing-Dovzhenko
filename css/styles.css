@@ -665,16 +665,81 @@ button {
 /*Section #5 Reviewes*/
 .reviewes-section {}
 
-.div-reviewes {
+.div-reviews {
+    height: 598px;
+    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 48px;
-    justify-content: center;
+    
 }
 
-/*Div for parents reviewes*/
-.parents-reviewes {
-    display: block;
+.slides {
+    display: none;
+    width: inherit;
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.tab {
+    cursor: pointer;
+    height: 60px;
+    width: 240px;
+    background-color: transparent;
+    border-radius: 16px;
+    display: inline-block;
+    transition: background-color 250ms ease-in,
+                color 250ms ease-in;
+    z-index: 3;
+    color: var(--black-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-l {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tab-r {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.active,
+.tab:hover {
+    background-color: var(--blue-button);
+    color: var(--gray-text);
+}
+
+
+/* The dots/bullets/indicators /Button to change reviewes divs*/
+.tabs-review {
+    width: 480px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: rgba(86, 80, 222, 0.25);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+}
+
+.active,
+.scroll-rev:hover {
+    background-color: var(--blue-button);
 }
 
 .text-reviewes {
@@ -725,79 +790,7 @@ button {
     line-height: normal;
 }
 
-/*Div for teachers reviewes*/
-.reviewes {
-    display: none;
-}
 
-.reviewes .active {
-    display: block;
-}
-
-/*Button to change reviewes divs*/
-.tabs-review {
-    width: 480px;
-    height: 60px;
-    padding: 12px 24px;
-    border-radius: 16px;
-    background-color: rgba(86, 80, 222, 0.25);
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    z-index: 2;
-}
-
-.radio {
-    display: none;
-}
-
-.label-tab {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--black-text);
-    font-family: Manrope;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 32px;
-    cursor: pointer;
-    z-index: 3;
-    transition: color 250ms ease-in-out;
-}
-
-.radio:checked + label {
-            color: var(--gray-text);
-}
-
-.radio-1:checked ~ .glider {
-            transform: translateX(0);
-}
-
-.radio-2:checked ~ .glider {
-            transform: translateX(100%);
-}
-
-.radio-1:checked ~ .parents-reviewes {
-            display: block;
-}
-
-.glider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    background-color: var(--blue-button);
-    z-index: 1;
-    border-radius: 16px;
-    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
-    height: 60px;
-    width: 240px;
-    transition: 250ms ease-in-out;
-}
 
 /*Section #6 Contact me*/
 .contact-section {}
